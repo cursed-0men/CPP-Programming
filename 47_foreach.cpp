@@ -13,7 +13,7 @@ int main(){
 int A[]={3,2,1,6,5,4,9,8,7};
 
 for (int x:A){     
-    cout<<++x<<endl; // will print array with 1 added in each element.
+    cout<<++x<<endl; // will print an array with 1 added in each element.
 }
 
     return 0;
