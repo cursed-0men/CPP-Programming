@@ -1,5 +1,5 @@
 /*---For each loop---*/
-//SYNATAX:
+//SYNTAX:
 
 //   for(int x:A)
 //   {
