@@ -9,28 +9,52 @@
 
 // In this example we will be making an array by taking inputs from user for elements.
 
+// linear search
+
 #include<iostream>
 using namespace std;
-int main()
+
+// linear search function.
+int linear_search(int key, int n, int arr[]){
+      
+      for(int i = 0; i < n; i++){
+            if(key==arr[i]){
+                  cout<<"key is found at:"<<i<<endl;
+                  return 0;
+            }
+      }
+cout<<"key is not found"<<endl;
+}
+
+
+
+int main(){
+           
+// taking input from user.
+int n;
+cout<<"n = ";
+cin>>n;
+
+int arr[n];
+
+      for (int i = 0; i < n; i++)
+      {
+            cin>>arr[i];
+      }
+
+// displaying array
+for (int i = 0; i < n; i++)
 {
- int i, A[4],n=4;
- int key;
- 
- cout<<"enter elements = ";
- for (i = 0; i < n; i++)
- {
-    cin>>A[i];
- }
-cout<<"enter key = ";
+      cout<<arr[i]<<" ";
+}
+
+//linear search 
+cout<<endl;
+int key;
+cout<<"key = ";
 cin>>key;
- for ( i = 0; i < n; i++)
- {
-    if(key==A[i]){
-        cout<<"key is found at = "<<i;
-        return 0;
-    }
- }
- cout<<"key not found!!";
- 
-    return 0;
+
+linear_search(key,n,arr);
+
+return 0;
 }
