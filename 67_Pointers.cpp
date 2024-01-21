@@ -17,6 +17,7 @@ int main()
 
 int *p;    // address variable.
 p=&x;    //pointing on location of x.
+ // &x means : reference to x. OR address of x.
 
     return 0;
 }
