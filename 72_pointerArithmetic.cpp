@@ -30,9 +30,11 @@ int main()
  int *q;
  q=&a[3]; // this will store address of element 8 in q.
 
-cout<<p<<endl;
+cout<<p<<endl
 cout<<s<<endl;
 cout<<q<<endl;
+
+ // NOTE : output of p and s will be the same, as above we did "p++".
  
     return 0;
 }
