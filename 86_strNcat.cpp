@@ -16,8 +16,8 @@ int main()
 
  strncat(s1,s2,4);
 
- cout<<s1<<endl;
- cout<<s2<<endl;
+ cout<<s1<<endl; //helloworl
+ cout<<s2<<endl; //world
  
     return 0;
 }
